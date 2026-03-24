@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hack Timeline — Arun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+    CONTENT — edit this block, save, reload to see changes
+    tag options: research | startup | shipped | collab | academic
+                 VR | hackathon | award | mobile | indie | platform
+    images: array of filenames from the same folder as this file
+  ============================================================ -->
+  <script>
+  const DATA = {
+
+    name:     "ARUN MIKAEL MEHTA",
+    tagline:  "MIT Media Lab · Square-Enix · CyGames · Independent",
+    location: "Cambridge · Tokyo · Helsinki",
+    years:    "1997–2026",
+
+    role:   "Game Engineer · Researcher · Indie Developer",
+    career: ["MIT Media Lab", "Motus", "Square-Enix", "GREE", "CyGames", "DMM", "PlusOne", "ChessX", "Playroll"],
+
+    // Achievement badges — add/remove/recolor freely
+    badges: [
+      { label: "20 Projects",     color: "#10B981" },
+      { label: "29 Yrs",          color: "#F59E0B" },
+      { label: "JP · US · FI",     color: "#3B82F6" },
+      { label: "MIT Alumni",      color: "#6366F1" },
+      { label: "Tokyo Game Dev",  color: "#A855F7" },
+      { label: "Hacker",           color: "#F97316" },
+      { label: "Father",           color: "#F472B6" },
+    ],
+
+    // Each group = one year on the timeline.
+    // Projects are listed in the order they should appear.
+    // "images" is a list of filenames in this folder.
+    timeline: [
+
+      { year: "1997", projects: [
+        { title: "Cricket Prototypes",
+          org:   "MIT Media Lab",
+          tag:   "research",
+          desc:  "Physical computing devices with programmable sensor-driven behaviors — early embedded systems work at the intersection of tangible interfaces and play.",
+          images: ["100-b.png"] },
+      ]},
+
+      { year: "1999", projects: [
+        { title: "TransitMonitor",
+          org:   "MIT Media Lab",
+          tag:   "research",
+          desc:  "Public geo-location server cataloguing static and mobile location data for mapping and app developers — an early, prescient precursor to Google Maps.",
+          images: ["90-b.jpg", "90-c.jpg"] },
+      ]},
+
+      { year: "2000", projects: [
+        { title: "Human-Octopus Interface",
+          org:   "MIT Media Lab",
+          tag:   "research",
+          desc:  "Experimental interface exploring cross-species biological feedback — a radical HCI study in sensory extension beyond the human body.",
+          images: ["105-b.png"] },
+      ]},
+
+      { year: "2001", projects: [
+        { title: "iClub IMU",
+          org:   "Fortescue",
+          tag:   "startup",
+          desc:  "Inertial measurement unit embedded in a golf club to capture swing biomechanics in real time — early sports-tech wearable, pre-smartphone.",
+          images: ["110-b.jpeg", "110-c.png", "110-d.png"] },
+      ]},
+
+      { year: "2004", projects: [
+        { title: "Game Controller IMU, pre-Wii",
+          org:   "Fortescue",
+          tag:   "startup",
+          desc:  "Motion-sensing game controller prototype using IMU data — predating the Wii Remote by two years and anticipating the shift to physical play.",
+          images: ["115-b.png", "115-c.jpeg"] },
+      ]},
+
+      { year: "2010", projects: [
+        { title: "AI Go",
+          org:   "Square-Enix Research Center",
+          tag:   "research",
+          desc:  "AI engine for the ancient board game Go — machine learning applied to classical strategy inside a AAA games research context.",
+          images: ["120-b.jpeg"] },
+        { title: "New Game Input: MIT Color Glove Collab",
+          org:   "Square-Enix Research Center",
+          tag:   "collab",
+          desc:  "Novel game input device developed in collaboration with MIT — color-based gesture recognition as an alternative to traditional controllers.",
+          images: ["130-b.jpeg"] },
+      ]},
+
+      { year: "2011", projects: [
+        { title: "SIGGRAPH Poster: Efficient Example-Based Motion Styling",
+          org:   "Square-Enix Research Center",
+          tag:   "academic",
+          desc:  "Published at SIGGRAPH — a technique for efficiently transferring motion style between character animations using example-based machine learning.",
+          images: ["140-b.png"] },
+        { title: "Final Fantasy XIII — Game Engine",
+          org:   "Square-Enix Luminous Team",
+          tag:   "shipped",
+          desc:  "Core engine contribution to one of Square-Enix's flagship JRPGs — real-time rendering and Crystal Tools pipeline work on a title shipped globally.",
+          images: ["160-b.jpeg"] },
+      ]},
+
+      { year: "2012", projects: [
+        { title: "6DOF Haunted House with Real-Time GI",
+          org:   "Square-Enix Research Center",
+          tag:   "research",
+          desc:  "Six-degrees-of-freedom VR demo featuring real-time global illumination — pushing the boundary of what interactive lighting could look like in games.",
+          images: ["150-b.jpeg"] },
+      ]},
+
+      { year: "2013", projects: [
+        { title: "Animal Days",
+          org:   "GREE",
+          tag:   "mobile",
+          desc:  "Social mobile game published on Japan's GREE platform — casual gameplay loop with persistent world mechanics at the height of the social gaming wave.",
+          images: ["170-c.jpg"] },
+      ]},
+
+      { year: "2015", projects: [
+        { title: "Famitsu Award: Best Visuals — Phoenix Studios",
+          org:   "Tokyo Indie Fest",
+          tag:   "award",
+          desc:  "★ Best Visuals award at Tokyo Indie Fest, covered by Famitsu — Japan's most widely read games magazine — for a self-published indie title.",
+          images: ["180.jpg"] },
+      ]},
+
+      { year: "2016", projects: [
+        { title: "Drunk Room 2, VR Prototype for CEO",
+          org:   "CyGames",
+          tag:   "VR",
+          desc:  "VR experience simulating extreme disorientation through physics-based environmental chaos — a consumer VR tech demo built directly for executive presentation.",
+          images: ["190.png"] },
+      ]},
+
+      { year: "2018", projects: [
+        { title: "VR English Tutor",
+          org:   "PlusOne",
+          tag:   "VR",
+          desc:  "Immersive language-learning environment using VR for situated conversation practice — leveraging spatial memory and contextual vocabulary acquisition.",
+          images: ["200.jpeg"] },
+      ]},
+
+      { year: "2022", projects: [
+        { title: "Buffet: NFT-based SocialFi App for Healthy Eating",
+          org:   "MIT Bitcoin Expo",
+          tag:   "hackathon",
+          desc:  "Tokenized incentive system rewarding healthy eating habits — on-chain meal verification with social mechanics. Built in 48 hours at MIT Bitcoin Expo.",
+          images: ["210-b.jpg", "210-c.jpg"] },
+      ]},
+
+      { year: "2023", projects: [
+        { title: "GameFi Prototype",
+          org:   "Polygon × JUMP Hackathon, Singapore",
+          tag:   "hackathon",
+          desc:  "Play-to-earn game prototype built on Polygon — exploring onchain game economies and sustainable token reward loops for mobile-first players.",
+          images: ["220-b.png", "220-c.jpg"] },
+      ]},
+
+      { year: "2025", projects: [
+        { title: "ChessX Early Access",
+          org:   "Independent",
+          tag:   "indie",
+          desc:  "Experimental chess variant with extended rule sets and a custom AI opponent — exploring what happens when you expand a 1500-year-old state space.",
+          images: ["230-b.png", "230-c.PNG", "230-d.PNG"] },
+      ]},
+
+      { year: "2026", projects: [
+        { title: "Choose-Your-Own-Adventure with GenAI",
+          org:   "Supercell Hackathon",
+          tag:   "hackathon",
+          desc:  "Generative AI-driven narrative engine for branching interactive fiction — dynamic story generation where every player shapes a unique world.",
+          images: ["240-b.png", "240-c.png"] },
+        { title: "Playroll",
+          org:   "Independent",
+          tag:   "platform",
+          desc:  "Game platform for generating robot training data — players produce high-quality labeled datasets through gameplay, turning fun into fuel for embodied AI.",
+          images: ["250-c.png", "250-d.png"] },
+        { title: "MIT Bitcoin Hackathon",
+          org:   "MIT Campus",
+          tag:   "hackathon",
+          desc:  "36 hours to learn, build, and ship the next generation of Bitcoin and blockchain applications — in-person at MIT, frontier tech under pressure.",
+          images: ["260-b.jpg"] },
+      ]},
+
+    ], // end timeline
+  }; // end DATA
+
+  // Tag → color mapping (edit hex values to change the palette)
+  const TAG_COLOR = {
+    "research":  "#3B82F6",   // blue
+    "startup":   "#F59E0B",   // amber
+    "shipped":   "#10B981",   // emerald
+    "collab":    "#EC4899",   // pink
+    "academic":  "#6366F1",   // indigo
+    "VR":        "#A855F7",   // purple
+    "hackathon": "#EF4444",   // red
+    "award":     "#EAB308",   // gold
+    "mobile":    "#06B6D4",   // cyan
+    "indie":     "#F97316",   // orange
+    "platform":  "#14B8A6",   // teal
+  };
+
+  function tagColor(tag) {
+    return TAG_COLOR[tag] || "#888";
+  }
+  </script>
+
+  <!-- ============================================================
+    STYLES
+  ============================================================ -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #FFFFFF;
+      --warm-bg: #FDFBF6;
+      --line:    #EDE8DE;
+      --text:    #161616;
+      --mid:     #585858;
+      --dim:     #A0A0A0;
+      --mono:    'Space Mono', 'Courier New', monospace;
+      --body:    'DM Sans', system-ui, sans-serif;
+      --display: 'Bebas Neue', 'Impact', sans-serif;
+    }
+
+    body {
+      background: #EDE8DE;
+      font-family: var(--body);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── PAGE ──────────────────────────────────────────── */
+    .page {
+      max-width: 780px;
+      margin: 40px auto 80px;
+      background: var(--warm-bg);
+      box-shadow: 0 4px 48px rgba(0,0,0,0.12);
+    }
+
+    /* ── HEADER ─────────────────────────────────────────── */
+
+    /* Rainbow stripe — top of page, game cartridge identity */
+    .page::before {
+      content: '';
+      display: block;
+      height: 12px;
+      background: linear-gradient(90deg,
+        #3B82F6, #A855F7, #EC4899, #EF4444,
+        #EAB308, #10B981, #06B6D4, #F97316, #14B8A6
+      );
+    }
+
+    .hdr {
+      padding: 44px 60px 40px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hdr__role {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 10px;
+    }
+
+    .hdr__name {
+      font-family: var(--display);
+      font-size: 68px;
+      letter-spacing: 5px;
+      line-height: 0.92;
+      color: #1C1C14;
+      margin-bottom: 28px;
+    }
+
+    /* Achievement badges */
+    .hdr__badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 28px;
+    }
+
+    .badge {
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #fff;
+      background: var(--badge-color, #888);
+      padding: 5px 11px 4px;
+      border-radius: 3px;
+      white-space: nowrap;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Career progression */
+    .hdr__career {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--mid);
+      letter-spacing: 0.3px;
+    }
+
+    .hdr__career-arrow {
+      color: var(--line-dark, #D0D0D0);
+      font-size: 13px;
+    }
+
+    /* ── CONTENT AREA ──────────────────────────────────── */
+    .content {
+      padding: 56px 60px 80px;
+    }
+
+    /* ── SECTION LABEL ─────────────────────────────────── */
+    .section-label {
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 52px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    /* ── TIMELINE ──────────────────────────────────────── */
+    .timeline {
+      position: relative;
+      padding-left: 128px;
+    }
+
+    /* Spine */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 88px;
+      top: 10px;
+      bottom: 0;
+      width: 2px;
+      background: var(--line);
+    }
+
+    /* ── YEAR GROUP ────────────────────────────────────── */
+    .yg { position: relative; margin-bottom: 68px; }
+
+    .yg__year {
+      position: absolute;
+      left: -128px;
+      top: -4px;
+      width: 80px;
+      text-align: right;
+      font-family: var(--display);
+      font-size: 34px;
+      letter-spacing: 1px;
+      line-height: 1;
+      color: var(--text);
+    }
+
+    /* Dot — colored by first project in group (set via inline style) */
+    .yg__dot {
+      position: absolute;
+      left: -40px;   /* center: 88 - 128 + 4(half of 8px) = -36... recalc: spine at 88, yg starts at 128 padding, dot left = 88-128-(8/2) = -44 */
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px var(--warm-bg), 0 0 0 5px currentColor;
+    }
+
+    /* Horizontal connector line (color matched to dot) */
+    .yg__connector {
+      position: absolute;
+      left: -31px;
+      top: 12px;
+      width: 31px;
+      height: 2px;
+    }
+
+    /* ── ENTRIES ───────────────────────────────────────── */
+    .entries { display: flex; flex-direction: column; gap: 18px; }
+
+    .entry {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--entry-color, #ccc);
+      padding: 24px 26px 26px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.03);
+    }
+
+    .entry__top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 3px;
+    }
+
+    .entry__title {
+      font-family: var(--body);
+      font-size: 14.5px;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+      line-height: 1.4;
+      color: var(--text);
+    }
+
+    .entry__tag {
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff;
+      background: var(--entry-color, #888);
+      padding: 3px 9px 2px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      align-self: flex-start;
+      margin-top: 1px;
+      border-radius: 2px;
+    }
+
+    .entry__org {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--dim);
+      margin-bottom: 10px;
+      letter-spacing: 0.2px;
+    }
+
+    .entry__desc {
+      font-family: var(--body);
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.75;
+      margin-bottom: 18px;
+    }
+
+    /* ── IMAGES ────────────────────────────────────────── */
+    .imgs { display: flex; gap: 8px; }
+
+    .imgs img {
+      flex: 1;
+      min-width: 0;
+      object-fit: cover;
+      display: block;
+      border-radius: 2px;
+      background: #f0ece4;  /* fallback while loading */
+    }
+
+    /* Height by image count */
+    .imgs.count-1 img { height: 260px; }
+    .imgs.count-2 img { height: 220px; }
+    .imgs.count-3 img { height: 175px; }
+
+    /* ── FOOTER ────────────────────────────────────────── */
+    .footer {
+      margin-top: 64px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--dim);
+      letter-spacing: 3px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* ── PRINT ─────────────────────────────────────────── */
+    @media print {
+      body { background: white; }
+      .page { margin: 0; box-shadow: none; max-width: 100%; }
+      .page::before,
+      .entry__tag,
+      .badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+<div class="page" id="page"></div>
+
+<!-- ============================================================
+  RENDERER — builds from DATA; don't edit below this line
+============================================================ -->
+<script>
+(function () {
+  const page = document.getElementById('page');
+
+  // ── header
+  const badgesHTML = DATA.badges.map(b =>
+    `<span class="badge" style="--badge-color:${b.color}">${b.label}</span>`
+  ).join('');
+
+  const careerHTML = DATA.career.map((step, i) =>
+    i < DATA.career.length - 1
+      ? `<span>${step}</span><span class="hdr__career-arrow">→</span>`
+      : `<span>${step}</span>`
+  ).join('');
+
+  page.innerHTML = `
+    <header class="hdr">
+      <div class="hdr__role">${DATA.role}</div>
+      <h1 class="hdr__name">${DATA.name}</h1>
+      <div class="hdr__badges">${badgesHTML}</div>
+      <div class="hdr__career">${careerHTML}</div>
+    </header>
+    <div class="content">
+      <div class="section-label">chronology</div>
+      <div class="timeline" id="timeline"></div>
+      <footer class="footer">
+        <span>${DATA.name.toLowerCase()} &nbsp;·&nbsp; ${DATA.years}</span>
+        <span>// end of log</span>
+      </footer>
+    </div>
+  `;
+
+  // ── timeline groups
+  const tl = document.getElementById('timeline');
+
+  DATA.timeline.forEach(group => {
+    const firstColor = tagColor(group.projects[0].tag);
+
+    const projectsHTML = group.projects.map(p => {
+      const color = tagColor(p.tag);
+      const imgsHTML = p.images.map(f =>
+        `<img src="${f}" alt="${p.title}">`
+      ).join('');
+      const countClass = `count-${p.images.length}`;
+
+      return `
+        <div class="entry" style="--entry-color: ${color}">
+          <div class="entry__top">
+            <div class="entry__title">${p.title}</div>
+            <div class="entry__tag">${p.tag}</div>
+          </div>
+          <div class="entry__org">${p.org}</div>
+          <p class="entry__desc">${p.desc}</p>
+          <div class="imgs ${countClass}">${imgsHTML}</div>
+        </div>`;
+    }).join('');
+
+    tl.innerHTML += `
+      <div class="yg">
+        <div class="yg__year">${group.year}</div>
+        <div class="yg__dot" style="background:${firstColor}; color:${firstColor}"></div>
+        <div class="yg__connector" style="background:${firstColor}; opacity:0.25"></div>
+        <div class="entries">${projectsHTML}</div>
+      </div>`;
+  });
+  // ── Set @page height to full content so PDF prints as one long page
+  window.addEventListener('load', () => {
+    const h = document.getElementById('page').scrollHeight;
+    const mm = Math.ceil(h * 0.2646) + 20; // px→mm, small buffer
+    const s = document.createElement('style');
+    s.textContent = `@page { size: 210mm ${mm}mm; margin: 0; }`;
+    document.head.appendChild(s);
+  });
+
+})();
+</script>
+</body>
+</html>
