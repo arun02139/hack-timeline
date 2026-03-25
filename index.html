@@ -496,6 +496,78 @@
       justify-content: space-between;
     }
 
+    /* ── MOBILE ────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .page {
+        margin: 0;
+        box-shadow: none;
+      }
+
+      .hdr {
+        padding: 28px 20px 24px;
+      }
+
+      .hdr__name {
+        font-size: 38px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        padding: 32px 20px 48px;
+      }
+
+      .section-label {
+        margin-bottom: 32px;
+      }
+
+      .timeline {
+        padding-left: 28px;
+      }
+
+      .timeline::before {
+        left: 8px;
+      }
+
+      .yg {
+        margin-bottom: 48px;
+      }
+
+      .yg__year {
+        position: static;
+        width: auto;
+        text-align: left;
+        font-size: 26px;
+        margin-bottom: 12px;
+      }
+
+      .yg__dot {
+        left: -24px;
+        top: 5px;
+        width: 8px;
+        height: 8px;
+        box-shadow: 0 0 0 2px var(--warm-bg), 0 0 0 4px currentColor;
+      }
+
+      .yg__connector {
+        display: none;
+      }
+
+      .entry {
+        padding: 16px 14px 18px;
+      }
+
+      .imgs.count-1 img { height: 180px; }
+      .imgs.count-2 img { height: 150px; }
+      .imgs.count-3 img { height: 120px; }
+
+      .footer {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 48px;
+      }
+    }
+
     /* ── PRINT ─────────────────────────────────────────── */
     @media print {
       body { background: white; }
